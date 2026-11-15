@@ -35,9 +35,9 @@ go install github.com/ffurrer2/semver/v2/cmd/semver@latest
 
 ```shell
 cosign verify-blob \
-  --certificate-identity 'https://github.com/ffurrer2/semver/.github/workflows/release.yml@refs/tags/v1.2.3' \
+  --certificate-identity 'https://github.com/ffurrer2/semver2/.github/workflows/release.yml@refs/tags/v1.2.0' \
   --certificate-oidc-issuer 'https://token.actions.githubusercontent.com' \
-  --bundle checksums.txt.sigstore.json checksums.txt
+  --bundle semver_checksums.txt.sigstore.json semver_checksums.txt
 ```
 
 ## Usage
