@@ -89,6 +89,7 @@ checksum:
 
 changelog:
   format: '{{ .SHA }} {{ .Message }}'
+
 dist: artifacts/dist
 
 signs:
