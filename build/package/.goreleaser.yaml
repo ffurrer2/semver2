@@ -30,36 +30,6 @@ release:
     - `docker pull docker.io/ffurrer/semver:{{.Major}}`
     - `docker pull docker.io/ffurrer/semver:latest`
 
-homebrew_casks:
-- name: semver
-  repository:
-    owner: ffurrer2
-    name: homebrew-tap
-    branch: main
-  commit_author:
-    name: goreleaser
-    email: ffurrer2@users.noreply.github.com
-  commit_msg_template: Brew cask update for {{.ProjectName}} version {{.Tag}}
-  directory: Casks
-  description: A semantic versioning command line utility written in Go.
-  homepage: https://github.com/ffurrer2/semver
-  ids:
-  - semver
-  binaries: [semver]
-  license: MIT
-scoops:
-- name: semver
-  repository:
-    owner: ffurrer2
-    name: scoop-bucket
-  commit_author:
-    name: goreleaser
-    email: ffurrer2@users.noreply.github.com
-  commit_msg_template: Scoop update for {{.ProjectName}} version {{.Tag}}
-  homepage: https://github.com/ffurrer2/semver
-  description: A semantic versioning command line utility written in Go.
-  license: MIT
-
 builds:
 - id: semver
   goos:
