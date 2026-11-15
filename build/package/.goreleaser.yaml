@@ -8,9 +8,6 @@ version: 2
 project_name: semver
 
 release:
-  github:
-    owner: ffurrer2
-    name: semver
   draft: false
   prerelease: auto
   name_template: '{{.Tag}}'
